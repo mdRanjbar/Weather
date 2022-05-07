@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>weather</title>
+</head>
+
+<body>
+    <div class="latitude-longitude-input">
+        <div class="latitude">
+            <span class="input-header">Enter your city name(English pls) :</span>
+            <input type="text" id="cityName">
+        </div>
+
+    </div>
+    <div class="btn">
+        <button>Done!</button>
+        <a href="index.html"><button>With lat/lan</button></a>
+    </div>
+    <div class="result">
+        <div class="result-header">
+            <span>Your city weather like :</span>
+        </div>
+        
+        <div class="result-container" id="resultContainer">
+            <span class="city-name">City name : <span class="city"></span><span class="country" id="country"></span></span><hr>
+            <div class="result-inputs">
+                <div class="row-1">
+                    <span class="sky">clouds : <span id="skyMain"></span></span><br><hr>
+                    <span class="description">Description : <span id="skydescription"></span></span><br><hr>
+                    <span class="temp">Temp : <span id="temp"></span></span><br><hr>
+                    <span class="Wind">Wind speed : <span id="Wind"></span></span><br><hr>
+                    <span class="Wind-deg">Wind Deg : <span id="WindDeg"></span></span><br><hr>
+                    <span class="Time">Time Zone : <span id="Time"></span></span><br><hr>
+                    <span class="pressure">Pressure : <span id="Pressure"></span></span><br><hr>
+                </div>
+            </div>
+        </div>
+        <div class="creator">
+        <h4>Creator : Mohamad Ranjbar</h4>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="with-name-weather.js"></script>
+</body>
+
+</html>

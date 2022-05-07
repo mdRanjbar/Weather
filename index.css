@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.latitude-longitude-input{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+}
+input{
+    border-radius: .3rem;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    transition:  .3s;
+}
+input:hover{
+    border-top: inset;
+    border-right: inset;
+    border-left: inset;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+button{
+    padding: 1rem;
+    font-size: 100%;
+    margin: 1rem;
+}
+.result-header{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.result-container{
+    margin: 0 5vw;
+}
+hr{
+    height: .3rem;
+    width: 3rem;
+    background-color: black;
+}
+.creator{
+    margin: 3rem;
+    color: #FF4438;
+}
